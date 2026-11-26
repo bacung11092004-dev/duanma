@@ -1,4 +1,4 @@
-package com.example.duanmu.repository;
+package com.example.duanmu.Repo;
 
 import com.example.duanmu.entity.ChatLieu;
 import jakarta.persistence.EntityManager;

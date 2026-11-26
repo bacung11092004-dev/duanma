@@ -10,7 +10,7 @@
         <properties>
             <!-- Cấu hình kết nối SQL Server (Đổi tên duanmu thành tên database của bạn) -->
             <property name="jakarta.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=duanmu;encrypt=true;trustServerCertificate=true;"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=duanmu1;encrypt=true;trustServerCertificate=true;"/>
             <property name="jakarta.persistence.jdbc.user" value="sa"/>
             <property name="jakarta.persistence.jdbc.password" value="123"/> <!-- Thay mật khẩu SQL của bạn vào đây -->
 
@@ -18,6 +18,9 @@
             <property name="hibernate.hbm2ddl.auto" value="update"/>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
+            <property name="jakarta.persistence.sql-load-script-source" value="data.sql"/>
         </properties>
+
     </persistence-unit>
 </persistence>
+
